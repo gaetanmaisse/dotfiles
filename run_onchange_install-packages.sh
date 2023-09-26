@@ -11,3 +11,11 @@ if test ! $(which brew); then
   echo "Installing homebrew..."
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
+
+# update homebrew recipes
+echo "Updating homebrew..."
+brew update
+
+# install all our dependencies with bundle (See Brewfile)
+echo "Installing packages..."
+brew bundle install --file=$HOME/.dotfiles/Brewfile
