@@ -153,17 +153,6 @@ dcapim() {
 
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# export JAVA_8_HOME=$(/usr/libexec/java_home -v1.8)
-# export JAVA_11_HOME=$(/usr/libexec/java_home -v11)
-# export JAVA_15_HOME=$(/usr/libexec/java_home -v15)
-
-# alias java8='export JAVA_HOME=$JAVA_8_HOME'
-# alias java11='export JAVA_HOME=$JAVA_11_HOME'
-# alias java15='export JAVA_HOME=$JAVA_15_HOME'
-
-# default to Java 11
-# java11
-
 export PATH="/usr/local/opt/ruby/bin:/usr/local/lib/ruby/gems/3.0.0/bin:$PATH"
 export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
