@@ -22,3 +22,9 @@ brew update
 # install all our dependencies with bundle (See Brewfile)
 echo "Installing packages..."
 brew bundle install --file=~/Brewfile
+
+# if Oh my zsh is not installed then install it
+if [ ! -d "$HOME/.oh-my-zsh" ]; then
+  echo "Installing Oh my zsh..."
+  sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+fi
