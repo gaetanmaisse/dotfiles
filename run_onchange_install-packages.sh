@@ -21,4 +21,4 @@ brew update
 
 # install all our dependencies with bundle (See Brewfile)
 echo "Installing packages..."
-brew bundle install --file=$HOME/.dotfiles/Brewfile
+brew bundle install --file=~/Brewfile
