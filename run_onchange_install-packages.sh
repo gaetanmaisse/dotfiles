@@ -1,8 +1,5 @@
 #!/bin/sh
 
-# Load the .zshrc file
-source ~/.zshrc
-
 # if we're not on a Mac, don't continue
 if [ "$(uname)" != "Darwin" ]; then
   echo "Not on a Mac, exiting..."
