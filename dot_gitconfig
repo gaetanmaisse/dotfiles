@@ -1,0 +1,22 @@
+[user]
+	name = Gaëtan Maisse
+	email = gaetanmaisse@gmail.com
+	signingkey = D934C0EF3714A8A8
+[core]
+	autocrlf = input
+	excludesFile = ~/.gitignore_global
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+[commit]
+	gpgsign = true
+[diff "sopsdiffer"]
+	textconv = sops -d
+[pull]
+	rebase = true
+[gpg]
+	program = /usr/local/MacGPG2/bin/gpg2
+[init]
+	defaultBranch = main
