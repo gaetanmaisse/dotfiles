@@ -1,4 +1,4 @@
-DEFAULT_USER=gmaisse
+export DEFAULT_USER=gaetan.maisse
 
 # Force history file to force Webstorm to use it instead of its own history file 
 export HISTFILE=$HOME/.zsh_history
@@ -18,7 +18,7 @@ setopt EXTENDED_HISTORY
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/gmaisse/.oh-my-zsh"
+export ZSH="/Users/$DEFAULT_USER/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -163,7 +163,7 @@ export SDKMAN_DIR="$HOME/.sdkman"
 
 
 # bun completions
-[ -s "/Users/gmaisse/.bun/_bun" ] && source "/Users/gmaisse/.bun/_bun"
+[ -s "/Users/$DEFAULT_USER/.bun/_bun" ] && source "/Users/$DEFAULT_USER/.bun/_bun"
 
 # bun
 export BUN_INSTALL="$HOME/.bun"
