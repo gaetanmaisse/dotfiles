@@ -2,6 +2,7 @@
 brew 'wget'
 brew 'autojump'
 brew 'docker'
+brew 'watch'
 
 # Applications
 cask 'docker'
@@ -15,5 +16,3 @@ cask 'warp'
 cask 'jetbrains-toolbox'
 cask 'rectangle'
 cask 'evernote'
-cask 'grammarly-desktop'
-cask 'meetingbar'
