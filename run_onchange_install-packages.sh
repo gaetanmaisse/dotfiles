@@ -15,16 +15,32 @@ if test ! $(which brew); then
   eval "$(/opt/homebrew/bin/brew shellenv)"
 fi
 
-# update homebrew recipes
-echo "Updating homebrew..."
-brew update
-
-# install all our dependencies with bundle (See Brewfile)
-echo "Installing packages..."
-brew bundle install --file=~/Brewfile
 
 # if Oh my zsh is not installed then install it
 if [ ! -d "$HOME/.oh-my-zsh" ]; then
   echo "Installing Oh my zsh..."
   sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 fi
+
+# update homebrew recipes
+echo "Updating homebrew..."
+brew update
+
+# CLI tools
+brew install 'wget'
+brew install 'autojump'
+brew install 'watch'
+brew install 'docker'
+
+# Applications
+brew install --cask 'docker'
+brew install --cask 'google-chrome'
+brew install --cask 'brave-browser'
+brew install --cask 'slack'
+brew install --cask 'gpg-suite'
+brew install --cask 'keka'
+brew install --cask 'postman'
+brew install --cask 'warp'
+brew install --cask 'jetbrains-toolbox'
+brew install --cask 'rectangle'
+brew install --cask 'evernote'
