@@ -33,6 +33,7 @@ brew install 'watch'
 brew install 'docker'
 
 # Applications
+brew install --cask 'appcleaner'
 brew install --cask 'docker'
 brew install --cask 'google-chrome'
 brew install --cask 'brave-browser'
