@@ -31,6 +31,7 @@ brew install 'wget'
 brew install 'autojump'
 brew install 'watch'
 brew install 'docker'
+brew install 'meetingbar'
 
 # Applications
 brew install --cask 'appcleaner'
