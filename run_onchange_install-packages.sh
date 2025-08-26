@@ -32,6 +32,8 @@ brew install 'autojump'
 brew install 'watch'
 brew install 'docker'
 brew install 'meetingbar'
+brew install 'git-absorb'
+brew install 'bruno'
 
 # Applications
 brew install --cask 'appcleaner'
