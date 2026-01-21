@@ -1,5 +1,5 @@
-export DEFAULT_USER=gaetan.maisse
-DEFAULT_USER=gaetan.maisse
+export DEFAULT_USER=gaetanmaisse
+DEFAULT_USER=gaetanmaisse
 
 # Force history file to force Webstorm to use it instead of its own history file 
 export HISTFILE=$HOME/.zsh_history
@@ -155,17 +155,3 @@ dcapim() {
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 export PATH="/usr/local/opt/ruby/bin:/usr/local/lib/ruby/gems/3.0.0/bin:$PATH"
-export VOLTA_HOME="$HOME/.volta"
-export PATH="$VOLTA_HOME/bin:$PATH"
-
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="$HOME/.sdkman"
-[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
-
-
-# bun completions
-[ -s "/Users/$DEFAULT_USER/.bun/_bun" ] && source "/Users/$DEFAULT_USER/.bun/_bun"
-
-# bun
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
